@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fef7ee;
+  --color-brand-100: #fdedd3;
+  --color-brand-200: #f9d7a6;
+  --color-brand-300: #f5ba6e;
+  --color-brand-400: #f09434;
+  --color-brand-500: #e58a2d;
+  --color-brand-600: #d9730d;
+  --color-brand-700: #b85d08;
+  --color-brand-800: #924a0d;
+  --color-brand-900: #763e0e;
+
+  --color-surface: #141414;
+  --color-surface-2: #1a1a1a;
+  --color-surface-3: #1e1e1e;
+  --color-surface-4: #242424;
+  --color-surface-hover: #2a2a2a;
+
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-default: rgba(255, 255, 255, 0.10);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", "PingFang SC", monospace;
+}
+
+* {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #141414;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.22); }
+
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #e58a2d 0%, #f5ba6e 50%, #d9730d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-glow {
+  box-shadow: 0 0 20px rgba(229, 138, 45, 0.12), 0 0 40px rgba(229, 138, 45, 0.04);
+}
+
+.brand-glow-strong {
+  box-shadow: 0 0 30px rgba(229, 138, 45, 0.20), 0 0 60px rgba(229, 138, 45, 0.08);
+}

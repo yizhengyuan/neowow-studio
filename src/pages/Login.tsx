@@ -47,13 +47,15 @@ export default function Login() {
       <div className="relative w-full max-w-md px-6">
         {/* Logo */}
         <div className="text-center mb-10">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center mx-auto mb-5 brand-glow-strong">
-            <Sparkles className="w-8 h-8 text-white" />
-          </div>
+          <img
+            src="/yunhu-logo.png"
+            alt="云狐"
+            className="h-16 mx-auto mb-5 drop-shadow-[0_0_30px_rgba(1,124,211,0.2)]"
+          />
           <h1 className="text-2xl font-bold mb-2">
-            <span className="gradient-text">Neo Studio</span>
+            <span className="gradient-text">云狐 Studio</span>
           </h1>
-          <p className="text-white/35 text-sm">AI 创意工坊 · 让创作触手可及</p>
+          <p className="text-white/35 text-sm">云狐 AI 创意工坊 · 让创作触手可及</p>
         </div>
 
         {/* Feature hints */}

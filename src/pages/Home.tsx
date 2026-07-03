@@ -37,14 +37,16 @@ export default function Home() {
     <div className="max-w-5xl mx-auto px-6 py-10">
       {/* Hero */}
       <div className="text-center mb-12">
-        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center mx-auto mb-5 brand-glow">
-          <Sparkles className="w-7 h-7 text-white" />
-        </div>
+        <img
+          src="/yunhu-logo.png"
+          alt="云狐"
+          className="h-14 mx-auto mb-5 drop-shadow-[0_0_30px_rgba(1,124,211,0.2)]"
+        />
         <h1 className="text-2xl font-bold mb-2">
-          欢迎回来，<span className="gradient-text">{user?.nickname || "Creator"}</span>
+          欢迎来到<span className="gradient-text">云狐</span>，{user?.nickname || "Creator"}
         </h1>
         <p className="text-white/35 text-sm max-w-md mx-auto">
-          选择下方工具开始创作，从灵感到成品，一站式 AI 创作工坊
+          选择下方工具开始创作，云狐 AI 一站式创意工坊
         </p>
       </div>
 

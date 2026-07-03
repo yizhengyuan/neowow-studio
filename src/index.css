@@ -1,22 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-50: #fef7ee;
-  --color-brand-100: #fdedd3;
-  --color-brand-200: #f9d7a6;
-  --color-brand-300: #f5ba6e;
-  --color-brand-400: #f09434;
-  --color-brand-500: #e58a2d;
-  --color-brand-600: #d9730d;
-  --color-brand-700: #b85d08;
-  --color-brand-800: #924a0d;
-  --color-brand-900: #763e0e;
+  /* 云狐 Blue brand palette */
+  --color-brand-50: #e6f4fd;
+  --color-brand-100: #c3e4fa;
+  --color-brand-200: #96d1f7;
+  --color-brand-300: #64baf3;
+  --color-brand-400: #2ea0ec;
+  --color-brand-500: #017cd3;
+  --color-brand-600: #0166b0;
+  --color-brand-700: #01508c;
+  --color-brand-800: #013c6e;
+  --color-brand-900: #001a53;
 
-  --color-surface: #141414;
-  --color-surface-2: #1a1a1a;
-  --color-surface-3: #1e1e1e;
-  --color-surface-4: #242424;
-  --color-surface-hover: #2a2a2a;
+  /* Navy surface palette */
+  --color-surface: #0a0e1a;
+  --color-surface-2: #0f1320;
+  --color-surface-3: #141828;
+  --color-surface-4: #1a1f30;
+  --color-surface-hover: #1f2538;
 
   --color-border-subtle: rgba(255, 255, 255, 0.06);
   --color-border-default: rgba(255, 255, 255, 0.10);
@@ -35,7 +37,7 @@ html {
 }
 
 body {
-  background-color: #141414;
+  background-color: #0a0e1a;
   color: rgba(255, 255, 255, 0.92);
   font-family: var(--font-sans);
   font-size: 14px;
@@ -54,32 +56,32 @@ body {
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.22); }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.08); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.16); }
 
 .glass {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
 .glass-strong {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #e58a2d 0%, #f5ba6e 50%, #d9730d 100%);
+  background: linear-gradient(135deg, #017cd3 0%, #2ea0ec 50%, #017cd3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .brand-glow {
-  box-shadow: 0 0 20px rgba(229, 138, 45, 0.12), 0 0 40px rgba(229, 138, 45, 0.04);
+  box-shadow: 0 0 20px rgba(1, 124, 211, 0.12), 0 0 40px rgba(1, 124, 211, 0.04);
 }
 
 .brand-glow-strong {
-  box-shadow: 0 0 30px rgba(229, 138, 45, 0.20), 0 0 60px rgba(229, 138, 45, 0.08);
+  box-shadow: 0 0 30px rgba(1, 124, 211, 0.20), 0 0 60px rgba(1, 124, 211, 0.08);
 }

@@ -31,12 +31,14 @@ export default function Layout() {
       >
         {/* Logo */}
         <div className="flex items-center gap-3 h-16 px-4 border-b border-border-subtle">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center shrink-0 brand-glow">
-            <Sparkles className="w-4 h-4 text-white" />
-          </div>
+          <img
+            src="/yunhu-logo.png"
+            alt="云狐"
+            className="w-8 h-8 rounded-lg object-contain shrink-0"
+          />
           {!collapsed && (
             <span className="gradient-text font-bold text-sm whitespace-nowrap">
-              Neo Studio
+              云狐 Studio
             </span>
           )}
         </div>
@@ -110,7 +112,7 @@ export default function Layout() {
           <div className="flex items-center gap-2">
             <span className="text-[11px] text-white/25 flex items-center gap-1">
               <Zap className="w-3 h-3 text-brand-500" />
-              AI Creative Studio v1.0
+              云狐 AI 创意工坊 v1.0
             </span>
           </div>
         </header>
